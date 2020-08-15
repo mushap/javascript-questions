@@ -102,6 +102,7 @@ Because of the event queue in JavaScript, the `setTimeout` callback function is 
 
 In the second loop, the variable `i` was declared using the `let` keyword: variables declared with the `let` (and `const`) keyword are block-scoped (a block is anything between `{ }`). During each iteration, `i` will have a new value, and each value is scoped inside the loop.
 
+<a href="https://playcode.io/652216/" target="_blank">Play With Code</a>
 </p>
 </details>
 
