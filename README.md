@@ -236,6 +236,7 @@ First, variable `c` holds a value to an object. Later, we assign `d` with the sa
 
 When you change one object, you change all of them.
 
+<a href="https://playcode.io/652227/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -251,12 +252,14 @@ let c = 3;
 console.log(a == b);
 console.log(a === b);
 console.log(b === c);
+console.log(a === c);
+console.log(a == c);
 ```
 
-- A: `true` `false` `true`
-- B: `false` `false` `true`
-- C: `true` `false` `false`
-- D: `false` `true` `true`
+- A: `true` `false` `true` `false` `true`
+- B: `false` `false` `true` `true` `false`
+- C: `true` `false` `false` `true` `true`
+- D: `false` `true` `true` `true` `true`
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -269,6 +272,7 @@ When we use the `==` operator, it only checks whether it has the same _value_. T
 
 However, when we use the `===` operator, both value _and_ type should be the same. It's not: `new Number()` is not a number, it's an **object**. Both return `false.`
 
+<a href="https://playcode.io/652229/" target="_blank">Play With Code</a>
 </p>
 </details>
 
