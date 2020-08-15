@@ -361,10 +361,11 @@ bark.animal = 'dog';
 
 #### Answer: A
 
-This is possible in JavaScript, because functions are objects! (Everything besides primitive types are objects)
+This is possible in JavaScript, <b>because functions are objects!</b> (Everything besides primitive types are objects)
 
-A function is a special type of object. The code you write yourself isn't the actual function. The function is an object with properties. This property is invocable.
+<b>A function is a special type of object.</b> The code you write yourself isn't the actual function. The function is an object with properties. This property is invocable.
 
+<a href="https://playcode.io/652245/" target="_blank">Play With Code</a>
 </p>
 </details>
 
