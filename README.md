@@ -139,6 +139,7 @@ With arrow functions, the `this` keyword refers to its current surrounding scope
 
 There is no value `radius` on that object, which returns `undefined`.
 
+<a href="https://playcode.io/652219/" target="_blank">Play With Code</a>
 </p>
 </details>
 
