@@ -335,6 +335,7 @@ It logs the object, because we just created an empty object on the global object
 
 In order to avoid this, we can use `"use strict"`. This makes sure that you have declared a variable before setting it equal to anything.
 
+<a href="https://playcode.io/652244/" target="_blank">Play With Code</a>
 </p>
 </details>
 
