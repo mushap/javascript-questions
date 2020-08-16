@@ -510,6 +510,7 @@ JavaScript is a **dynamically typed language**: we don't specify what types cert
 
 In this example, JavaScript converts the number `1` into a string, in order for the function to make sense and return a value. During the addition of a numeric type (`1`) and a string type (`'2'`), the number is treated as a string. We can concatenate strings like `"Hello" + "World"`, so what's happening here is `"1" + "2"` which returns `"12"`.
 
+<a href="https://playcode.io/652567/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -546,6 +547,7 @@ The **prefix** unary operator `++`:
 
 This returns `0 2 2`.
 
+<a href="https://playcode.io/652570/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -577,6 +579,7 @@ getPersonInfo`${person} is ${age} years old`;
 
 If you use tagged template literals, the value of the first argument is always an array of the string values. The remaining arguments get the values of the passed expressions!
 
+<a href="https://playcode.io/652572/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -613,6 +616,7 @@ The two objects that we are comparing don't have that: the object we passed as a
 
 This is why both `{ age: 18 } === { age: 18 }` and `{ age: 18 } == { age: 18 }` return `false`.
 
+<a href="https://playcode.io/652574/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -640,6 +644,7 @@ getAge(21);
 
 The rest parameter (`...args`.) lets us "collect" all remaining arguments into an array. An array is an object, so `typeof args` returns `"object"`
 
+<a href="https://playcode.io/652583/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -669,6 +674,7 @@ getAge();
 
 With `"use strict"`, you can make sure that you don't accidentally declare global variables. We never declared the variable `age`, and since we use `"use strict"`, it will throw a reference error. If we didn't use `"use strict"`, it would have worked, since the property `age` would have gotten added to the global object.
 
+<a href="https://playcode.io/652584/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -692,6 +698,7 @@ const sum = eval('10*10+5');
 
 `eval` evaluates codes that's passed as a string. If it's an expression, like in this case, it evaluates the expression. The expression is `10 * 10 + 5`. This returns the number `105`.
 
+<a href="https://playcode.io/652589/" target="_blank">Play With Code</a>
 </p>
 </details>
 
