@@ -1431,8 +1431,9 @@ Promise.race([firstPromise, secondPromise]).then(res => console.log(res));
 
 When we pass multiple promises to the `Promise.race` method, it resolves/rejects the _first_ promise that resolves/rejects. To the `setTimeout` method, we pass a timer: 500ms for the first promise (`firstPromise`), and 100ms for the second promise (`secondPromise`). This means that the `secondPromise` resolves first with the value of `'two'`. `res` now holds the value of `'two'`, which gets logged.
 
-More Info;
+More Info;<br/>
 race => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race
+<br/>
 all => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all
 
 <a href="https://playcode.io/654701/" target="_blank">Play With Code</a>
@@ -1475,6 +1476,7 @@ Then, we set the variable `person` equal to `null`.
 
 We are only modifying the value of the `person` variable, and not the first element in the array, since that element has a different (copied) reference to the object. The first element in `members` still holds its reference to the original object. When we log the `members` array, the first element still holds the value of the object, which gets logged.
 
+<a href="https://playcode.io/654712/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1505,6 +1507,7 @@ for (const item in person) {
 
 With a `for-in` loop, we can iterate through object keys, in this case `name` and `age`. Under the hood, object keys are strings (if they're not a Symbol). On every loop, we set the value of `item` equal to the current key it’s iterating over. First, `item` is equal to `name`, and gets logged. Then, `item` is equal to `age`, which gets logged.
 
+<a href="https://playcode.io/654719/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1532,6 +1535,7 @@ Operator associativity is the order in which the compiler evaluates the expressi
 
 `7 + '5'` results in `"75"` because of coercion. JavaScript converts the number `7` into a string, see question 15. We can concatenate two strings using the `+`operator. `"7" + "5"` results in `"75"`.
 
+<a href="https://playcode.io/654723/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1557,6 +1561,7 @@ Only the first numbers in the string is returned. Based on the _radix_ (the seco
 
 `*` is not a valid number. It only parses `"7"` into the decimal `7`. `num` now holds the value of `7`.
 
+<a href="https://playcode.io/654729/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1585,6 +1590,7 @@ When mapping over the array, the value of `num` is equal to the element it’s c
 
 However, we don’t return a value. When we don’t return a value from the function, the function returns `undefined`. For every element in the array, the function block gets called, so for each element we return `undefined`.
 
+<a href="https://playcode.io/654730/" target="_blank">Play With Code</a>
 </p>
 </details>
 
