@@ -1,45 +1,47 @@
 <div align="center">
   <img height="60" src="https://img.icons8.com/color/344/javascript.png"> 
-  <h1>JavaScript Questions</h1>
+  <h1>JavaScript Questions</h1>	
 
----
+---	
 
-<span>I post multiple choice JavaScript questions on my [Instagram](https://www.instagram.com/theavocoder) **stories**, which I'll also post here! Last updated: <a href=#20200612><b>June 12th</b></a>
+<span>
 
-From basic to advanced: test how well you know JavaScript, refresh your knowledge a bit, or prepare for your coding interview! :muscle: :rocket: I update this repo regularly with new questions. I added the answers in the **collapsed sections** below the questions, simply click on them to expand it. It's just for fun, good luck! :heart:</span>
+From basic to advanced: test how well you know JavaScript, refresh your knowledge a bit, or prepare for your coding interview! :muscle: :rocket: I update this repo regularly with new questions. I added the answers in the **collapsed sections** below the questions, simply click on them to expand it. It's just for fun, good luck! :heart:</span>	
+</div>	
 
-Feel free to reach out to me! 😊 <br />
-  <a href="https://www.instagram.com/theavocoder">Instagram</a> || <a href="https://www.twitter.com/lydiahallie">Twitter</a> || <a href="https://www.linkedin.com/in/lydia-hallie">LinkedIn</a> || <a href="https://www.lydiahallie.dev">Blog</a>
-  </div>
+| Feel free to use them in a project! 😃  I would _really_ appreciate a reference to this repo, I create the questions and explanations (yes I'm sad lol) and the community helps me so much to maintain and improve it! 💪🏼 Thank you and have fun!   |	
+|---|	
 
----
+---	
 
-<details><summary><b> See 16 Available Translations 🇪🇸🇮🇹🇩🇪 🇫🇷🇷🇺🇨🇳🇵🇹</b></summary>
-<p>
+<details><summary><b> See 17 Available Translations 🇪🇸🇮🇹🇩🇪 🇫🇷🇷🇺🇨🇳🇵🇹</b></summary>	
+<p>	
 
-* [English](../en-EN/README.md)
-* [العربية](../ar-AR/README_AR.md)
-* [اللغة العامية - Egyptian Arabic](../ar-EG/README_ar-EG.md)
-* [Bosanski](../bs-BS/README-bs_BS.md)  
-* [Deutsch](../de-DE/README.md)  
-* [Español](../es-ES/README-ES.md)
-* [Français](../fr-FR/README_fr-FR.md)
-* [日本語](../ja-JA/README-ja_JA.md)  
-* [한국어](../ko-KR/README-ko_KR.md)
-* [Nederlands](./nl-NL/README.md)
-* [Português Brasil](../pt-BR/README_pt_BR.md)  
-* [Русский](../ru-RU/README.md)
-* [Українська мова](../ua-UA/README-ua_UA.md)  
-* [Tiếng Việt](../vi-VI/README-vi.md)
-* [中文版本](../zh-CN/README-zh_CN.md)
-* [Türkçe](../tr-TR/README-tr_TR.md)
-* [ไทย](../th-TH/README-th_TH.md)
-* [Indonesia](../id-ID/README.md)
+* [English](./en-EN/README.md)	
+* [العربية](./ar-AR/README_AR.md)	
+* [اللغة العامية - Egyptian Arabic](./ar-EG/README_ar-EG.md)	
+* [Bosanski](./bs-BS/README-bs_BS.md)  	
+* [Deutsch](./de-DE/README.md)  	
+* [Español](./es-ES/README-ES.md)	
+* [Français](./fr-FR/README_fr-FR.md)	
+* [日本語](./ja-JA/README-ja_JA.md)  	
+* [한국어](./ko-KR/README-ko_KR.md)	
+* [Nederlands](./nl-NL/README.md)	
+* [Português Brasil](./pt-BR/README_pt_BR.md)  	
+* [Русский](./ru-RU/README.md)	
+* [Українська мова](./ua-UA/README-ua_UA.md)  	
+* [Tiếng Việt](./vi-VI/README-vi.md)	
+* [简体中文](./zh-CN/README-zh_CN.md)	
+* [繁體中文](./zh-TW/README_zh-TW.md)	
+* [Türkçe](./tr-TR/README-tr_TR.md)	
+* [ไทย](./th-TH/README-th_TH.md)	
+* [Indonesia](./id-ID/README.md)	
 
-</p>
-</details>
+</p>	
+</details>	
 
----
+---	
+
 
 ###### 1. What's the output?
 
@@ -63,11 +65,11 @@ sayHi();
 <p>
 
 #### Answer: D
-
 Within the function, we first declare the `name` variable with the `var` keyword. This means that the variable gets hoisted (memory space is set up during the creation phase) with the default value of `undefined`, until we actually get to the line where we define the variable. We haven't defined the variable yet on the line where we try to log the `name` variable, so it still holds the value of `undefined`.
 
 Variables with the `let` keyword (and `const`) are hoisted, but unlike `var`, don't get <i>initialized</i>. They are not accessible before the line we declare (initialize) them. This is called the "temporal dead zone". When we try to access the variables before they are declared, JavaScript throws a `ReferenceError`.
 
+<a href="https://playcode.io/652212/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -98,6 +100,7 @@ Because of the event queue in JavaScript, the `setTimeout` callback function is 
 
 In the second loop, the variable `i` was declared using the `let` keyword: variables declared with the `let` (and `const`) keyword are block-scoped (a block is anything between `{ }`). During each iteration, `i` will have a new value, and each value is scoped inside the loop.
 
+<a href="https://playcode.io/652224/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -134,6 +137,7 @@ With arrow functions, the `this` keyword refers to its current surrounding scope
 
 There is no value `radius` on that object, which returns `undefined`.
 
+<a href="https://playcode.io/652219/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -230,6 +234,7 @@ First, variable `c` holds a value to an object. Later, we assign `d` with the sa
 
 When you change one object, you change all of them.
 
+<a href="https://playcode.io/652227/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -245,12 +250,14 @@ let c = 3;
 console.log(a == b);
 console.log(a === b);
 console.log(b === c);
+console.log(a === c);
+console.log(a == c);
 ```
 
-- A: `true` `false` `true`
-- B: `false` `false` `true`
-- C: `true` `false` `false`
-- D: `false` `true` `true`
+- A: `true` `false` `true` `false` `true`
+- B: `false` `false` `true` `true` `false`
+- C: `true` `false` `false` `true` `true`
+- D: `false` `true` `true` `true` `true`
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -263,6 +270,7 @@ When we use the `==` operator, it only checks whether it has the same _value_. T
 
 However, when we use the `===` operator, both value _and_ type should be the same. It's not: `new Number()` is not a number, it's an **object**. Both return `false.`
 
+<a href="https://playcode.io/652229/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -296,8 +304,9 @@ console.log(freddie.colorChange('orange'));
 
 #### Answer: D
 
-The `colorChange` function is static. Static methods are designed to live only on the constructor in which they are created, and cannot be passed down to any children. Since `freddie` is a child, the function is not passed down, and not available on the `freddie` instance: a `TypeError` is thrown.
+The `colorChange` function is static. <b> Static methods are designed to live only on the constructor in which they are created, and cannot be passed down to any children.</b> Since `freddie` is a child, the function is not passed down, and not available on the `freddie` instance: a `TypeError` is thrown.
 
+<a href="https://playcode.io/652242/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -324,6 +333,7 @@ It logs the object, because we just created an empty object on the global object
 
 In order to avoid this, we can use `"use strict"`. This makes sure that you have declared a variable before setting it equal to anything.
 
+<a href="https://playcode.io/652244/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -349,10 +359,11 @@ bark.animal = 'dog';
 
 #### Answer: A
 
-This is possible in JavaScript, because functions are objects! (Everything besides primitive types are objects)
+This is possible in JavaScript, <b>because functions are objects!</b> (Everything besides primitive types are objects)
 
-A function is a special type of object. The code you write yourself isn't the actual function. The function is an object with properties. This property is invocable.
+<b>A function is a special type of object.</b> The code you write yourself isn't the actual function. The function is an object with properties. This property is invocable.
 
+<a href="https://playcode.io/652245/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -394,6 +405,7 @@ Person.prototype.getFullName = function() {
 
 would have made `member.getFullName()` work. Why is this beneficial? Say that we added this method to the constructor itself. Maybe not every `Person` instance needed this method. This would waste a lot of memory space, since they would still have that property, which takes of memory space for each instance. Instead, if we only add it to the prototype, we just have it at one spot in memory, yet they all have access to it!
 
+<a href="https://playcode.io/652246/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -428,6 +440,7 @@ For `sarah`, we didn't use the `new` keyword. When using `new`, `this` refers to
 
 We said that `this.firstName` equals `"Sarah"` and `this.lastName` equals `"Smith"`. What we actually did, is defining `global.firstName = 'Sarah'` and `global.lastName = 'Smith'`. `sarah` itself is left `undefined`, since we don't return a value from the `Person` function.
 
+<a href="https://playcode.io/652248/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -495,6 +508,7 @@ JavaScript is a **dynamically typed language**: we don't specify what types cert
 
 In this example, JavaScript converts the number `1` into a string, in order for the function to make sense and return a value. During the addition of a numeric type (`1`) and a string type (`'2'`), the number is treated as a string. We can concatenate strings like `"Hello" + "World"`, so what's happening here is `"1" + "2"` which returns `"12"`.
 
+<a href="https://playcode.io/652567/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -531,6 +545,7 @@ The **prefix** unary operator `++`:
 
 This returns `0 2 2`.
 
+<a href="https://playcode.io/652570/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -562,6 +577,7 @@ getPersonInfo`${person} is ${age} years old`;
 
 If you use tagged template literals, the value of the first argument is always an array of the string values. The remaining arguments get the values of the passed expressions!
 
+<a href="https://playcode.io/652572/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -598,6 +614,7 @@ The two objects that we are comparing don't have that: the object we passed as a
 
 This is why both `{ age: 18 } === { age: 18 }` and `{ age: 18 } == { age: 18 }` return `false`.
 
+<a href="https://playcode.io/652574/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -625,6 +642,7 @@ getAge(21);
 
 The rest parameter (`...args`.) lets us "collect" all remaining arguments into an array. An array is an object, so `typeof args` returns `"object"`
 
+<a href="https://playcode.io/652583/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -654,6 +672,7 @@ getAge();
 
 With `"use strict"`, you can make sure that you don't accidentally declare global variables. We never declared the variable `age`, and since we use `"use strict"`, it will throw a reference error. If we didn't use `"use strict"`, it would have worked, since the property `age` would have gotten added to the global object.
 
+<a href="https://playcode.io/652584/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -677,6 +696,7 @@ const sum = eval('10*10+5');
 
 `eval` evaluates codes that's passed as a string. If it's an expression, like in this case, it evaluates the expression. The expression is `10 * 10 + 5`. This returns the number `105`.
 
+<a href="https://playcode.io/652589/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -761,6 +781,7 @@ All object keys (excluding Symbols) are strings under the hood, even if you don'
 
 It doesn't work that way for a set. There is no `'1'` in our set: `set.has('1')` returns `false`. It has the numeric type `1`, `set.has(1)` returns `true`.
 
+<a href="https://playcode.io/652723/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -785,6 +806,7 @@ console.log(obj);
 
 If you have two keys with the same name, the key will be replaced. It will still be in its first position, but with the last specified value.
 
+<a href="https://playcode.io/652725/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -829,6 +851,7 @@ for (let i = 1; i < 5; i++) {
 
 The `continue` statement skips an iteration if a certain condition returns `true`.
 
+<a href="https://playcode.io/652727/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -858,6 +881,7 @@ name.giveLydiaPizza();
 
 `String` is a built-in constructor, which we can add properties to. I just added a method to its prototype. Primitive strings are automatically converted into a string object, generated by the string prototype function. So, all strings (string objects) have access to that method!
 
+<a href="https://playcode.io/652728/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -892,6 +916,7 @@ However, when we stringify an object, it becomes `"[object Object]"`. So what we
 
 Then, we log `a[b]`, which is actually `a["object Object"]`. We just set that to `456`, so it returns `456`.
 
+<a href="https://playcode.io/652729/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -945,6 +970,7 @@ This is where an event loop starts to work. An **event loop** looks at the stack
 
 `bar` gets invoked, `"Second"` gets logged, and it's popped off the stack.
 
+<a href="https://playcode.io/652731/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -999,8 +1025,9 @@ The deepest nested element that caused the event is the target of the event. You
 
 #### Answer: A
 
-If we click `p`, we see two logs: `p` and `div`. During event propagation, there are 3 phases: capturing, target, and bubbling. By default, event handlers are executed in the bubbling phase (unless you set `useCapture` to `true`). It goes from the deepest nested element outwards.
+If we click `p`, we see two logs: `p` and `div`. During event propagation, there are 3 phases: capturing, target, and bubbling. By default, event handlers are executed in the bubbling phase (unless you set `useCapture` to `true`). <p>It goes from the deepest nested element outwards</p>.
 
+<a href="https://playcode.io/652735/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1033,6 +1060,7 @@ With both, we can pass the object to which we want the `this` keyword to refer t
 
 `.bind.` returns a _copy_ of the function, but with a bound context! It is not executed immediately.
 
+<a href="https://playcode.io/652736/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1060,8 +1088,9 @@ console.log(typeof sayHi());
 
 The `sayHi` function returns the returned value of the immediately invoked function (IIFE). This function returned `0`, which is type `"number"`.
 
-FYI: there are only 7 built-in types: `null`, `undefined`, `boolean`, `number`, `string`, `object`, `symbol`, and `bigint`. `"function"` is not a type, since functions are objects, it's of type `"object"`.
+FYI: there are only 7 built-in types: `null`, `undefined`, `boolean`, `number`, `string`, `object`, and `symbol`. `"function"` is not a type, since functions are objects, it's of type `"object"`.
 
+<a href="https://playcode.io/652738/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1123,6 +1152,8 @@ console.log(typeof typeof 1);
 `typeof 1` returns `"number"`.
 `typeof "number"` returns `"string"`
 
+<a href="https://playcode.io/6527
+/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1152,6 +1183,7 @@ When you set a value to an element in an array that exceeds the length of the ar
 
 depending on where you run it (it's different for every browser, node, etc.)
 
+<a href="https://playcode.io/652744/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1189,6 +1221,7 @@ Later, we set this block-scoped variable equal to `1`, and set the value of the 
 
 Outside of the `catch` block, `x` is still `undefined`, and `y` is `2`. When we want to `console.log(x)` outside of the `catch` block, it returns `undefined`, and `y` returns `2`.
 
+<a href="https://playcode.io/652746/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1242,6 +1275,7 @@ What differentiates a primitive from an object is that primitives do not have an
 
 Then, `[1, 2, 0, 1]` is `acc` and `[2, 3]` is `cur`. We concatenate them, and get `[1, 2, 0, 1, 2, 3]`
 
+<a href="https://playcode.io/652749/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1271,6 +1305,7 @@ Then, `[1, 2, 0, 1]` is `acc` and `[2, 3]` is `cur`. We concatenate them, and ge
 
 `1` is truthy. `!1` returns `false`. `!false` returns `true`.
 
+<a href="https://playcode.io/654685/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1294,6 +1329,15 @@ setInterval(() => console.log('Hi'), 1000);
 
 It returns a unique id. This id can be used to clear that interval with the `clearInterval()` function.
 
+Note:
+<b>
+The setInterval() method calls a function or evaluates an expression at specified intervals (in milliseconds).
+The setInterval() method will continue calling the function until clearInterval() is called, or the window is closed.
+</b>
+<br/>
+also consider this => https://github.com/lydiahallie/javascript-questions/issues/59
+
+<a href="https://playcode.io/654687/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1317,6 +1361,7 @@ It returns a unique id. This id can be used to clear that interval with the `cle
 
 A string is an iterable. The spread operator maps every character of an iterable to one element.
 
+<a href="https://playcode.io/654691/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1352,6 +1397,7 @@ First, we initialize the generator function with `i` equal to `10`. We invoke th
 
 Then, we invoke the function again with the `next()` method. It starts to continue where it stopped previously, still with `i` equal to `10`. Now, it encounters the next `yield` keyword, and yields `i * 2`. `i` is equal to `10`, so it returns `10 * 2`, which is `20`. This results in `10, 20`.
 
+<a href="https://playcode.io/654695/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1383,6 +1429,12 @@ Promise.race([firstPromise, secondPromise]).then(res => console.log(res));
 
 When we pass multiple promises to the `Promise.race` method, it resolves/rejects the _first_ promise that resolves/rejects. To the `setTimeout` method, we pass a timer: 500ms for the first promise (`firstPromise`), and 100ms for the second promise (`secondPromise`). This means that the `secondPromise` resolves first with the value of `'two'`. `res` now holds the value of `'two'`, which gets logged.
 
+More Info;<br/>
+race => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race
+<br/>
+all => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all
+
+<a href="https://playcode.io/654701/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1422,6 +1474,7 @@ Then, we set the variable `person` equal to `null`.
 
 We are only modifying the value of the `person` variable, and not the first element in the array, since that element has a different (copied) reference to the object. The first element in `members` still holds its reference to the original object. When we log the `members` array, the first element still holds the value of the object, which gets logged.
 
+<a href="https://playcode.io/654712/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1452,6 +1505,7 @@ for (const item in person) {
 
 With a `for-in` loop, we can iterate through object keys, in this case `name` and `age`. Under the hood, object keys are strings (if they're not a Symbol). On every loop, we set the value of `item` equal to the current key it’s iterating over. First, `item` is equal to `name`, and gets logged. Then, `item` is equal to `age`, which gets logged.
 
+<a href="https://playcode.io/654719/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1479,6 +1533,7 @@ Operator associativity is the order in which the compiler evaluates the expressi
 
 `7 + '5'` results in `"75"` because of coercion. JavaScript converts the number `7` into a string, see question 15. We can concatenate two strings using the `+`operator. `"7" + "5"` results in `"75"`.
 
+<a href="https://playcode.io/654723/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1504,6 +1559,7 @@ Only the first numbers in the string is returned. Based on the _radix_ (the seco
 
 `*` is not a valid number. It only parses `"7"` into the decimal `7`. `num` now holds the value of `7`.
 
+<a href="https://playcode.io/654729/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1532,6 +1588,7 @@ When mapping over the array, the value of `num` is equal to the element it’s c
 
 However, we don’t return a value. When we don’t return a value from the function, the function returns `undefined`. For every element in the array, the function block gets called, so for each element we return `undefined`.
 
+<a href="https://playcode.io/654730/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -4217,7 +4274,7 @@ With the `flat` method, we can create a new, flattened array. The depth of the f
 
 ---
 
-###### <a name=20191224></a>132. What's the output?
+###### 132. What's the output?
 
 ```javascript
 class Counter {
@@ -4536,7 +4593,7 @@ In ES2020, we can add private variables in classes by using the `#`. We cannot a
 
 ---
 
-###### 140. What's the missing?
+###### 140. What's missing?
 
 ```javascript
 const teams = [
@@ -4715,7 +4772,7 @@ Objects aren't iterable by default. An iterable is an iterable if the iterator p
 </p>
 </details>
 
------
+---
 
 ###### 146. What's the output?
 
@@ -5080,7 +5137,7 @@ if (!typeof randomValue === "string") {
 
 #### Answer: B
 
-The condition within the `if` statement checks whether the value of `!typeof randomValue` is equal to `"string"`. The `!` operator converts the value to a boolean value. If the value is truthy, the returned value will be `false`, if the value is falsy, the returned value will be `true`. In this case, the returned value of `typeof randomValue` is the truthy value `"string"`, meaning that the value of `!typeof randomValue` is the boolean value `false`.
+The condition within the `if` statement checks whether the value of `!typeof randomValue` is equal to `"string"`. The `!` operator converts the value to a boolean value. If the value is truthy, the returned value will be `false`, if the value is falsy, the returned value will be `true`. In this case, the returned value of `typeof randomValue` is the truthy value `"number"`, meaning that the value of `!typeof randomValue` is the boolean value `false`.
 
 `!typeof randomValue === "string"` always returns false, since we're actually checking `false === "string"`. Since the condition returned `false`, the code block of the `else` statement gets run, and `Yay it's a string!` gets logged.
 
