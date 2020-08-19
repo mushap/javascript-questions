@@ -1306,6 +1306,7 @@ Then, `[1, 2, 0, 1]` is `acc` and `[2, 3]` is `cur`. We concatenate them, and ge
 
 `1` is truthy. `!1` returns `false`. `!false` returns `true`.
 
+<a href="https://playcode.io/654685/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1329,6 +1330,14 @@ setInterval(() => console.log('Hi'), 1000);
 
 It returns a unique id. This id can be used to clear that interval with the `clearInterval()` function.
 
+Note:
+<b>
+The setInterval() method calls a function or evaluates an expression at specified intervals (in milliseconds).
+The setInterval() method will continue calling the function until clearInterval() is called, or the window is closed.
+</b>
+also consider this => https://github.com/lydiahallie/javascript-questions/issues/59
+
+<a href="https://playcode.io/654687/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1352,6 +1361,7 @@ It returns a unique id. This id can be used to clear that interval with the `cle
 
 A string is an iterable. The spread operator maps every character of an iterable to one element.
 
+<a href="https://playcode.io/654691/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1387,6 +1397,7 @@ First, we initialize the generator function with `i` equal to `10`. We invoke th
 
 Then, we invoke the function again with the `next()` method. It starts to continue where it stopped previously, still with `i` equal to `10`. Now, it encounters the next `yield` keyword, and yields `i * 2`. `i` is equal to `10`, so it returns `10 * 2`, which is `20`. This results in `10, 20`.
 
+<a href="https://playcode.io/654695/" target="_blank">Play With Code</a>
 </p>
 </details>
 
