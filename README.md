@@ -1154,7 +1154,8 @@ console.log(typeof typeof 1);
 `typeof 1` returns `"number"`.
 `typeof "number"` returns `"string"`
 
-<a href="https://playcode.io/652742/" target="_blank">Play With Code</a>
+<a href="https://playcode.io/6527
+/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1335,6 +1336,7 @@ Note:
 The setInterval() method calls a function or evaluates an expression at specified intervals (in milliseconds).
 The setInterval() method will continue calling the function until clearInterval() is called, or the window is closed.
 </b>
+<br/>
 also consider this => https://github.com/lydiahallie/javascript-questions/issues/59
 
 <a href="https://playcode.io/654687/" target="_blank">Play With Code</a>
