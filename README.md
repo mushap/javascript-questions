@@ -1626,6 +1626,7 @@ The variable `birthYear` has a reference to the value `"1997"`. The argument `ye
 
 The value of `person` is an object. The argument `member` has a (copied) reference to the _same_ object. When we modify a property of the object `member` has a reference to, the value of `person` will also be modified, since they both have a reference to the same object. `person`'s `name` property is now equal to the value `"Lydia"`
 
+<a href="https://playcode.io/658328/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1664,6 +1665,7 @@ With the `throw` statement, we can create custom errors. With this statement, yo
 
 With the `catch` statement, we can specify what to do if an exception is thrown in the `try` block. An exception is thrown: the string `'Hello world'`. `e` is now equal to that string, which we log. This results in `'Oh an error: Hello world'`.
 
+<a href="https://playcode.io/658336/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1693,6 +1695,7 @@ console.log(myCar.make);
 
 When you return a property, the value of the property is equal to the _returned_ value, not the value set in the constructor function. We return the string `"Maserati"`, so `myCar.make` is equal to `"Maserati"`.
 
+<a href="https://playcode.io/658339/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1732,6 +1735,7 @@ Then, we declare a variable `x` with the value of `y`, which is `10`. Variables 
 
 However, we created a global variable `y` when setting `y` equal to `10`. This value is accessible anywhere in our code. `y` is defined, and holds a value of type `"number"`. `console.log(typeof y)` returns `"number"`.
 
+<a href="https://playcode.io/658342/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1773,6 +1777,7 @@ We can delete properties from objects using the `delete` keyword, also on the pr
 
 When we try to invoke something that is not a function, a `TypeError` is thrown. In this case `TypeError: pet.bark is not a function`, since `pet.bark` is `undefined`.
 
+<a href="https://playcode.io/658343/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1800,6 +1805,7 @@ The `Set` object is a collection of _unique_ values: a value can only occur once
 
 We passed the iterable `[1, 1, 2, 3, 4]` with a duplicate value `1`. Since we cannot have two of the same values in a set, one of them is removed. This results in `{1, 2, 3, 4}`.
 
+<a href="https://playcode.io/658346/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1907,6 +1913,7 @@ The value of `a` is now `1`, and the value of `b` is now `2`. What we actually d
 
 This means that the value of `y` is equal to the first value in the array, which is the number `1`. When we log `y`, `1` is returned.
 
+<a href="https://playcode.io/658376/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1933,6 +1940,7 @@ console.log(admin);
 
 It's possible to combine objects using the spread operator `...`. It lets you create copies of the key/value pairs of one object, and add them to another object. In this case, we create copies of the `user` object, and add them to the `admin` object. The `admin` object now contains the copied key/value pairs, which results in `{ admin: true, name: "Lydia", age: 21 }`.
 
+<a href="https://playcode.io/658384/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1963,6 +1971,7 @@ With the `defineProperty` method, we can add new properties to an object, or mod
 
 Properties added using the `defineProperty` method are immutable by default. You can override this behavior using the `writable`, `configurable` and `enumerable` properties. This way, the `defineProperty` method gives you a lot more control over the properties you're adding to an object.
 
+<a href="https://playcode.io/658389/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -1997,6 +2006,7 @@ If the replacer is an _array_, only the property names included in the array wil
 
 If the replacer is a _function_, this function gets called on every property in the object you're stringifying. The value returned from this function will be the value of the property when it's added to the JSON string. If the value is `undefined`, this property is excluded from the JSON string.
 
+<a href="https://playcode.io/658391/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -2031,6 +2041,7 @@ The unary operator `++` _first returns_ the value of the operand, _then incremen
 
 `num2` is `10`, since we passed `num1` to the `increasePassedNumber`. `number` is equal to `10`(the value of `num1`. Again, the unary operator `++` _first returns_ the value of the operand, _then increments_ the value of the operand. The value of `number` is `10`, so `num2` is equal to `10`.
 
+<a href="https://playcode.io/658395/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -2069,6 +2080,7 @@ The third time we invoke multiply, we do pass an argument: the object called `va
 
 The fourth time, we pass the `value` object again. `x.number` was previously modified to `20`, so `x.number *= 2` logs `40`.
 
+<a href="https://playcode.io/658397/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -2102,6 +2114,7 @@ If you don't return a value from a function, it returns `undefined`. On the next
 
 On the fourth call, we again don't return from the callback function. The accumulator is again `undefined`, and the current value is `4`. `undefined` and `4` get logged.
 
+<a href="https://playcode.io/658403/" target="_blank">Play With Code</a>
 </p>
 </details>
   
@@ -2213,6 +2226,7 @@ console.log(Symbol('foo') === Symbol('foo'));
 
 Every Symbol is entirely unique. The purpose of the argument passed to the Symbol is to give the Symbol a description. The value of the Symbol is not dependent on the passed argument. As we test equality, we are creating two entirely new symbols: the first `Symbol('foo')`, and the second `Symbol('foo')`. These two values are unique and not equal to each other, `Symbol('foo') === Symbol('foo')` returns `false`.
 
+<a href="https://playcode.io/658410/" target="_blank">Play With Code</a>
 </p>
 </details>
 
