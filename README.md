@@ -2383,6 +2383,7 @@ If we wanted to get access to the resolved value `"I made it"`, we could have us
 
 This would've logged `"I made it!"`
 
+<a href="https://playcode.io/658449/" target="_blank">Play With Code</a>
 </p>
 </details>
 
@@ -2413,6 +2414,7 @@ The `.push()` method returns the _length_ of the new array! Previously, the arra
 
 The `push` method modifies the original array. If you wanted to return the _array_ from the function rather than the _length of the array_, you should have returned `list` after pushing `item` to it.
 
+<a href="https://playcode.io/658453/" target="_blank">Play With Code</a>
 </p>
 </details>
 
